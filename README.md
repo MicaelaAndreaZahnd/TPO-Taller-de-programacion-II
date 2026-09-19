@@ -18,5 +18,5 @@ Este proyecto es un script en Python para monitorear los precios de nuestro cat�
 * **API Pública:** Es abierta para que la consuma cualquier desarrollador, muchas veces sin necesidad de registrarse. En nuestro proyecto, usamos la API pública **DolarAPI** para traer la cotización del dólar mayorista de forma libre.
 * **API Privada (o interna):** Es un servicio restringido al que solo pueden acceder los empleados o sistemas de una empresa mediante tokens de alta seguridad. Un ejemplo sería si tuviéramos que conectarnos al sistema de inventario (SAP/ERP) de nuestra propia empresa para consultar el stock real de los tachos de pintura.
 
-## Seguridad y Variables de Entorno (N17)
+## Seguridad y Variables de Entorno
 Para cumplir con las buenas prácticas de seguridad, las credenciales (como la API Key de OpenWeatherMap) no se exponen en el código fuente. Se implementó la librería `os` para leer las claves desde un archivo `.env` local, el cual está protegido y excluido del control de versiones gracias al archivo `.gitignore`.
